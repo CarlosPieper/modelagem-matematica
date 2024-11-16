@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Predição de Partidas de Futebol</title>
+</head>
+
+<body>
+    <h1>Predição de Partidas de Futebol</h1>
+    <input type="file" id="csvFile" accept=".csv">
+    <button onclick="carregarDados()">Carregar Dados</button>
+
+    <h2>Escolha os Times</h2>
+    <label for="mandante">Mandante:</label>
+    <select id="mandante"></select>
+    <label for="visitante">Visitante:</label>
+    <select id="visitante"></select>
+    <button onclick="predizerResultado()">Predizer Resultado</button>
+
+    <div id="resultados"></div>
+    <br>
+    <h2>Explicação método 1</h2>
+    <div id="explicacao-1"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
