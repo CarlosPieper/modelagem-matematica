@@ -1,0 +1,15 @@
+#explicacoes {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+#explicacao-1,
+#explicacao-2 {
+    width: 100%;
+    height: 500px;
+}
+
+h2{
+    text-align: center;
+}

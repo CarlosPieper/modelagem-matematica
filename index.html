@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Predição de Partidas de Futebol</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <h1>Predição de Partidas de Futebol</h1>
     <input type="file" id="csvFile" accept=".csv">
-    <button onclick="carregarDados()">Carregar Dados</button>
-
-    <h2>Escolha os Times</h2>
     <label for="mandante">Mandante:</label>
     <select id="mandante"></select>
     <label for="visitante">Visitante:</label>
@@ -19,11 +17,24 @@
     <button onclick="predizerResultado()">Predizer Resultado</button>
 
     <div id="resultados"></div>
-    <br>
-    <h2>Explicação método 1</h2>
-    <div id="explicacao-1"></div>
+    <div id="explicacoes">
 
+        <div id="explicacao-1">
+            <h2>Explicação método 1</h2>
+            <div id="texto-explicacao-1">
+
+            </div>
+        </div>
+        <div id="explicacao-2">
+            <h2>Explicação método 2</h2>
+            <div id="texto-explicacao-2">
+
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
+    <script src="metodo1.js"></script>
+    <script src="metodo2.js"></script>
 </body>
 
 </html>
