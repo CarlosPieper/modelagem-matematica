@@ -5,7 +5,7 @@ let divExplicacao1 = document.getElementById("texto-explicacao-1");
 let divExplicacao2 = document.getElementById("texto-explicacao-2");
 
 const ITERACOES_VALOR_ALEATORIO = 10;
-const ITERACOES_HISTORICO_GOLS = 100;
+const ITERACOES_HISTORICO_GOLS = 1000000;
 
 function lerCSV(file, callback) {
     const reader = new FileReader();
@@ -72,8 +72,8 @@ function predizerResultado() {
     const resultadoMetodo2 = metodoHistoricoResultados(mandante, visitante);
 
     divResultados.innerHTML += `
-        <h2>Resultado Método 1: Média de Gols: Mandante: ${resultadoMetodo1.chanceVitoriaMandante.toFixed(4)}% Empate: ${resultadoMetodo1.chanceEmpate.toFixed(4)}% Visitante: ${resultadoMetodo1.chanceVitoriaVisitante.toFixed(4)}%</h2>
-        <h2>Resultado Método 2: Histórico de Resultados: Mandante: ${resultadoMetodo2.chanceVitoriaMandante.toFixed(4)}% Empate: ${resultadoMetodo2.chanceEmpate.toFixed(4)}% Visitante: ${resultadoMetodo2.chanceVitoriaVisitante.toFixed(4)}%</h2>
+        <p>Resultado do Método de Média de Gols: Mandante: ${resultadoMetodo1.chanceVitoriaMandante.toFixed(4)}% Empate: ${resultadoMetodo1.chanceEmpate.toFixed(4)}% Visitante: ${resultadoMetodo1.chanceVitoriaVisitante.toFixed(4)}%</p>
+        <p>Resultado do Método de Histórico de Resultados: Mandante: ${resultadoMetodo2.chanceVitoriaMandante.toFixed(4)}% Empate: ${resultadoMetodo2.chanceEmpate.toFixed(4)}% Visitante: ${resultadoMetodo2.chanceVitoriaVisitante.toFixed(4)}%</p>
     `;
 }
 

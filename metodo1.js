@@ -45,11 +45,9 @@ function metodoMediaGols(mandante, visitante) {
         simulacoes.push({ mandante: golsMandante, visitante: golsVisitante })
     }
 
-    console.log(simulacoes)
-
-    const chanceVitoriaMandante = simulacoes.filter(simulacao => simulacao.mandante > simulacao.visitante).length;
-    const chanceEmpate = simulacoes.filter(simulacao => simulacao.mandante == simulacao.visitante).length;
-    const chanceVitoriaVisitante = simulacoes.filter(simulacao => simulacao.mandante < simulacao.visitante).length;
+    const chanceVitoriaMandante = simulacoes.filter(simulacao => simulacao.mandante > simulacao.visitante).length / 10000;
+    const chanceEmpate = simulacoes.filter(simulacao => simulacao.mandante == simulacao.visitante).length / 10000;
+    const chanceVitoriaVisitante = simulacoes.filter(simulacao => simulacao.mandante < simulacao.visitante).length / 10000;
 
     return {
         chanceVitoriaMandante,

@@ -10,23 +10,27 @@
 <body>
     <h1>Predição de Partidas de Futebol</h1>
     <input type="file" id="csvFile" accept=".csv">
-    <label for="mandante">Mandante:</label>
-    <select id="mandante"></select>
-    <label for="visitante">Visitante:</label>
-    <select id="visitante"></select>
+    <div class="input">
+        <label for="mandante">Mandante:</label>
+        <select id="mandante"></select>
+    </div>
+    <div class="input">
+        <label for="visitante">Visitante:</label>
+        <select id="visitante"></select>
+    </div>
+    <div id="porcentagem-empate"></div>
     <button onclick="predizerResultado()">Predizer Resultado</button>
 
     <div id="resultados"></div>
     <div id="explicacoes">
-
         <div id="explicacao-1">
-            <h2>Explicação método 1</h2>
+            <h2>Explicação método 1: Média de gols</h2>
             <div id="texto-explicacao-1">
 
             </div>
         </div>
         <div id="explicacao-2">
-            <h2>Explicação método 2</h2>
+            <h2>Explicação método 2: Histórico de resultados</h2>
             <div id="texto-explicacao-2">
 
             </div>
